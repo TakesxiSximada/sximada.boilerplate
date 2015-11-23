@@ -1,0 +1,51 @@
+# for python
+*.so
+*.py[cod]
+*.egg_info
+*.egg-info
+__pycache__
+
+# for venv
+env
+
+# for setup.py
+build
+dist
+sdist
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# buildout
+.installed.cfg
+parts
+develop-egg
+eggs
+
+# sphinx
+_build
+
+# translations
+*.mo
+*.pot
+
+
+# tox
+.tox
+
+# coverage
+htmlcov
+.coverage
+coverage.xml
+nosetests.xml
+
+# wget
+wget-log*
+
+# other
+.*
+.cache
+*.log
+var
+*.bk
