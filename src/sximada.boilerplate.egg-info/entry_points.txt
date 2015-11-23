@@ -1,0 +1,3 @@
+      [console_scripts]
+      sximada-boilerplate = sximada.boilerplate.main
+      
