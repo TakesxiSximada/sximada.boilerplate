@@ -3,8 +3,8 @@ u"""Python package boilerplate"""
 
 def dummy_for_ductest():
     """
-    >>> dummy()
-    'hello world!'
+    >>> dummy_for_ductest()
+    'hello world'
     """
     return 'hello world'
 

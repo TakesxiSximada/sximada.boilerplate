@@ -1,1 +1,3 @@
+recursive-include src/*
 include *.rst
+include *.py

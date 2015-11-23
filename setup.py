@@ -112,6 +112,6 @@ setup(
     ],
     entry_points="""\
       [console_scripts]
-      sximada-boilerplate = sximada.boilerplate.main
+      sximada-boilerplate = sximada.boilerplate.commands:main
       """,
     )
