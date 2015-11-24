@@ -67,7 +67,7 @@ PY36_OR_LATER = or_later_version(3, 6)
 
 def get_implementation():
     if PY33_BEFORE:
-        version_str = version_info.lower()
+        version_str = sys.version.lower()
         if 'pypy' in version_str:
             return 'pypy'
         elif 'jython' in version_str:
@@ -116,7 +116,7 @@ else:
     from repoze.lru import lru_cache
 
 
-if PY34_OR_LATER:
-    import enum
-else:
-    import enum  # for enum34
+# if PY34_OR_LATER:
+#     import enum
+# else:
+#     import enum  # for enum34

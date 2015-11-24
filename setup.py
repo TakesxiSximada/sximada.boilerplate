@@ -69,7 +69,6 @@ setup(
     test_suite='nose.collector',
     install_requires=[
         'six',
-        'jumon',
         'zope.interface',
         'lazr.delegates',
     ] + version_require,
