@@ -10,6 +10,7 @@ from six import (
 class VersionError(Exception):
     pass
 
+
 def equal_version(major, minor):
     return version_info.major == major and version_info.minor == minor
 
@@ -22,7 +23,7 @@ def before_version(major, minor):
     return version_info < (major, minor)
 
 
-PY23 = equal_version(2, 3)
+PY23 = equal_version(2, 3)  # noqa
 PY24 = equal_version(2, 4)
 PY25 = equal_version(2, 5)
 PY26 = equal_version(2, 6)
@@ -64,7 +65,6 @@ PY35_OR_LATER = or_later_version(3, 5)
 PY36_OR_LATER = or_later_version(3, 6)
 
 
-
 def get_implementation():
     if PY33_BEFORE:
         version_str = sys.version.lower()
@@ -100,12 +100,12 @@ if PY2:
     from Cookie import Morsel
     from StringIO import StringIO
 elif PY3:
-    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquote, quote_plus, unquote_plus, urldefrag
-    from urllib.request import parse_http_list
-    from http import cookiejar as cookielib
-    from http.cookies import Morsel
-    from io import StringIO
-    from collections import OrderedDict
+    from urllib.parse import urlparse, urlunparse, urljoin, urlsplit, urlencode, quote, unquote, quote_plus, unquote_plus, urldefrag  # noqa
+    from urllib.request import parse_http_list  # noqa
+    from http import cookiejar as cookielib  # noqa
+    from http.cookies import Morsel  # noqa
+    from io import StringIO  # noqa
+    from collections import OrderedDict  # noqa
 else:
     VersionError('Unknown version')
 
@@ -113,10 +113,4 @@ else:
 if PY33_OR_LATER:
     from functools import lru_cache
 else:
-    from repoze.lru import lru_cache
-
-
-# if PY34_OR_LATER:
-#     import enum
-# else:
-#     import enum  # for enum34
+    from repoze.lru import lru_cache  # noqa

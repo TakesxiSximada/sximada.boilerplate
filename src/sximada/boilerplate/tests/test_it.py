@@ -9,7 +9,7 @@ class DummyTest(TestCase):
 
     def _call_fut(self, *args, **kwds):
         fn = self._get_target()
-        return  fn(*args, **kwds)
+        return fn(*args, **kwds)
 
     def test_it(self):
         res = self._call_fut()
