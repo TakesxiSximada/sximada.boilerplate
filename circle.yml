@@ -4,7 +4,7 @@ machine:
 
 test:
   pre:
-    - pip uninstall -y detox astroid greenlet
+    - pip uninstall -y tox
     - pip install .[testing]
   override:
     - detox
