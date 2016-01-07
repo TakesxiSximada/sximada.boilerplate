@@ -4,6 +4,6 @@ machine:
 
 test:
   pre:
-    - pip install --process-dependency-links --force-reinstall .[testing]
+    - pip install .[testing]
   override:
     - detox

@@ -104,11 +104,6 @@ setup(
             'selenium',
         ],
     },
-    dependency_links=[
-        'https://bitbucket.org/hpk42/detox/get/0.9.4.zip#eggs=detox',
-        'https://bitbucket.org/logilab/astroid/get/tip.zip#eggs=astroid',
-        'https://github.com/eventlet/eventlet/archive/master.zip#eggs=eventlet',
-    ],
     entry_points="""\
       [console_scripts]
       sximada-boilerplate = sximada.boilerplate.commands:main
