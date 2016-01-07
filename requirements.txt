@@ -7,7 +7,6 @@ nose
 wheel
 sphinx
 pylint
-pylint
 flake8
 vulture
 selenium
