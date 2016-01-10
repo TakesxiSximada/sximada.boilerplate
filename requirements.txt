@@ -1,9 +1,7 @@
-https://bitbucket.org/hpk42/detox/get/0.9.4.zip#eggs=detox
-https://bitbucket.org/logilab/astroid/get/tip.zip#eggs=astroid
-https://github.com/eventlet/eventlet/archive/master.zip#eggs=eventlet
 six
 tox
 nose
+detox
 wheel
 sphinx
 pylint
@@ -13,3 +11,5 @@ selenium
 mypy-lang
 zope.interface
 lazr.delegates
+https://bitbucket.org/logilab/astroid/get/tip.zip#eggs=astroid
+https://github.com/eventlet/eventlet/archive/master.zip#eggs=eventlet
