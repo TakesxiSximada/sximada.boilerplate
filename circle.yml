@@ -16,6 +16,7 @@ test:
     - pip install --force-reinstall -U https://bitbucket.org/logilab/astroid/get/tip.zip#eggs=astroid
     - pip install --force-reinstall -U https://github.com/eventlet/eventlet/archive/master.zip#eggs=eventlet
     - pip install -U detox
+    - pip install -U coveralls
     - pyenv local $TOX_PY35 $TOX_PY34 $TOX_PY33 $TOX_PY32 $TOX_PY27 $TOX_PY26 $TOX_PYPY
   override:
     - detox -v
